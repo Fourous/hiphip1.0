@@ -1,0 +1,13 @@
+<!--pages/shcarticle/shcarticle.wxml-->
+   <view wx:if="{{articlelist==null||articlelist.length==0}}" class='shc_content'>
+      您还没收藏过文章哦！亲
+   </view>
+   <block wx:for="{{articlelist}}">
+      <view class="article-item" bindtap='goToArticleD' data-id="{{item.id}}">
+         <!--文章标题-->
+         <text class='item_title'>{{item.title}}\n</text>
+         <!--文章内容-->
+         <text class='item_txt'>{{item.content}}\n</text>
+      </view>
+   </block>
+

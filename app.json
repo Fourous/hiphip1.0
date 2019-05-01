@@ -1,0 +1,55 @@
+{
+   "pages": [
+      "pages/welcome/welcome",
+      "pages/index/index",
+      "pages/article/article",
+      "pages/logs/logs",
+      "pages/user/user",
+      "pages/cart/cart",
+      "pages/question/question",
+      "pages/address/address",
+      "pages/address/edit/edit",
+      "pages/goods/goods",
+      "pages/about/about",
+      "pages/recharge/recharge",
+      "pages/userInfo/userInfo",
+      "pages/article_detail/article_detail",
+      "pages/advertise/advertise",
+      "pages/order/order",
+      "pages/shcarticle/shcarticle"
+   ],
+   "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#E7481F",
+      "navigationBarTitleText": "贸易商城",
+      "navigationBarTextStyle": "black"
+   },
+   "tabBar": {
+      "list": [
+         {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "imges/index.png",
+            "selectedIconPath": "imges/index_se.png"
+         },
+         {
+            "pagePath": "pages/article/article",
+            "text": "文章",
+            "iconPath": "imges/article.png",
+            "selectedIconPath": "imges/article_se.png"
+         },
+         {
+            "pagePath": "pages/cart/cart",
+            "text": "购物车",
+            "iconPath": "imges/cart.png",
+            "selectedIconPath": "imges/cart_se.png"
+         },
+         {
+            "pagePath": "pages/user/user",
+            "text": "个人中心",
+            "iconPath": "imges/user.png",
+            "selectedIconPath": "imges/user_se.png"
+         }
+      ]
+   }
+}

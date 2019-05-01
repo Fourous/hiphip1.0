@@ -1,0 +1,32 @@
+/* pages/welcome/welcome.wxss */
+page{
+   height: 100%;
+   width: 100%;
+}
+.welcome{
+   height: 100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+.wel_img{
+   width: 100%;
+   height: 60%;
+}
+.pic{
+  width: 100%;
+  height: 100%;
+}
+.wel_txt{
+   text-align: center;
+   height: 100rpx;
+   line-height: 100rpx;
+   color: gray;
+}
+
+.wel_btn{
+   width: 40%;
+   margin: 50rpx auto;
+   background: orangered;
+   color: white;
+}

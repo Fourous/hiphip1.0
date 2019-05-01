@@ -1,0 +1,228 @@
+/* pages/cart/cart.wxss */
+.list_content{
+  border: 1px solid #ccc;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  /* background: gray; */
+}
+.nothing{
+  height: 100%;
+  margin: 100rpx auto;
+  width: 100%;
+}
+.nothing_text{
+  width: 100%;
+  padding: 0 95px;
+  margin: 10px 0;
+  text-align: center;
+}
+.nothing button{
+  width: 50%;
+  margin: 10px auto;
+}
+/* }
+.list_item{
+  margin-bottom: 5px;
+  height: 370rpx;
+  font-size: 16px;
+  background: white;
+  border-bottom: 1rpx solid #ccc;
+}
+.item_title{
+  height: 80rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.title_l{
+  float: left;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.title_r{
+  float: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.title_r text{
+  margin-right: 10px;
+}
+.item_desc{
+  height: 280rpx;
+  padding: 10rpx 10px;
+}
+.desc_pic{
+  display: inline-block; 
+  height: 260rpx;
+  width: 300rpx;
+}
+.desc_pic image{
+  height: 260rpx;
+  width: 300rpx;
+}
+.desc_content{
+  font-size: 16px;
+  display: inline-block;
+  float: right;  
+  width: 355rpx; 
+  height: 260rpx;
+  padding: 10rpx;  
+}
+
+ .content_title, .content_package, .content_price{
+  padding-bottom: 30rpx;
+}
+.num{
+  float: right;
+} 
+.content_num{
+  font-size: 16px;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+.num_jia, .num_jian, .num_num{
+  padding: 30rpx;
+}
+.content_l{
+  display: inline-block;
+  width: 250rpx;
+}
+.content_r{
+  display: inline-block;
+  float: right;
+  width: 100rpx;
+  height: 70rpx;
+  background: orangered;
+  color: white;
+  padding: 95rpx 0rpx;
+} */
+.list_item{
+   position: relative;
+   height: 250rpx;
+   line-height: 250rpx;
+   overflow: hidden;
+   border-bottom: 20rpx solid rgb(245, 245, 245);
+}
+.item_content{
+   position: absolute;
+   top: 0;
+   height: 250rpx;
+   background: white;
+   width: 100%;
+   z-index: 5;
+   padding: 0;
+   transition: left 0.2s ease-in-out;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.item_del{
+   position: absolute;
+   top: 0;
+   background: #e64340;
+   width: 180rpx;
+   text-align: center;
+   z-index: 4;
+   right: 0;
+}
+.content_che{
+   display: inline-block;
+   width: 10%;
+   padding-left: 40rpx;
+   height: 250rpx;
+   background: white;
+}
+.content_desc{
+   display: inline-block;
+   width: 90%;
+   height: 250rpx;
+}
+.desc_pic{
+   display: inline-block;
+   width: 30%;
+   height: 200rpx;
+   margin: 25rpx 30rpx; 
+}
+.pic{
+   height: 100%;
+   width: 100%;
+}
+.desc_content{
+   display: inline-block;
+   height: 145rpx;
+   margin: 12rpx 0;
+   padding-top: 40rpx; 
+   padding-bottom: 40rpx;
+}
+.content_title{
+   height: 20%;
+   font-size: 15px;
+   line-height: 20%;
+}
+.num{
+   display: inline-block;
+   float: right;
+   height: 30rpx;
+   font-size: 20px;
+}
+.num_num, .num_jia, .num_jian{
+   height: 30rpx;
+   display: inline-block;
+}
+.num_num{
+   width: 50rpx;
+   height: 30rpx;
+   text-align: center;
+   margin: 0 15rpx;
+}
+.foot{
+  position: fixed;
+  z-index: 1111;
+  width: 100%;
+  height: 90rpx;
+  background: white;
+  bottom: 1px;
+  border-top: 1px solid #ccc;
+}
+.seleAll{
+  float: left;
+  width: 30%;
+  height: 90rpx;
+}
+.seleAll switch{
+  margin: 5px 5px;
+}
+.sele_text{
+  position: relative;
+  top: 7rpx;
+}
+.total{
+  float: right;
+  height: 90rpx;
+  width: 69%;
+}
+.total_price{
+  float: right;
+  padding-top: 12rpx;
+  padding-right: 10rpx;
+  height: 90rpx;
+}
+.price{
+  color: orangered;
+}
+.total_count{
+  float: right;
+  height: 90rpx;
+  line-height: 90rpx;
+  width: 200rpx;
+  color: white;
+  margin: 0;
+  text-align: center;
+  background: orangered;
+}
+.que{
+   border-radius: 50%;
+}
+.ck{
+   border-radius: 50%;
+   height: 50rpx;
+   width: 50rpx;
+}

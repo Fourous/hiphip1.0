@@ -1,0 +1,46 @@
+.container {
+    background-color: antiquewhite;
+}
+.userinfo-avatar {
+    width: 256rpx;
+    height: 256rpx;
+    border-radius: 50%;
+    background-color:grey;
+  }
+.userinfo-upload {
+   padding-top: 40rpx;
+   padding-bottom: 160rpx;
+}
+
+#userinfo-nickname {
+    
+       
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    
+}
+.userinfo-nickname{
+    clear: both;
+    padding: 12rpx 0rpx;
+}
+
+.userinfo-nickname text{
+    line-height: 30px;
+    padding-left: 0rpx;
+    float: left;
+}
+.userinfo-nickname input{
+    float: right;
+    position: relative;
+    left: 50rpx;
+}
+.hr{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background:gray;
+    top: 52rpx;
+}
+.submit {
+    padding:150rpx 256rpx 20rpx 200rpx;
+}

@@ -1,0 +1,66 @@
+#about {
+    background-color: white;
+    margin-top:10rpx;
+}
+
+
+.banner image{
+   
+    
+    width:100%;
+    height:100%;
+}
+.banner {
+    display: block;
+    height:400rpx;
+}
+
+.content-item {
+    padding:30rpx;
+    text-align: center;
+   
+}
+.content-item text {
+    font-size: 18px;
+
+}
+.hr{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: darkorange;
+    
+}
+.content-text {
+    padding: 30rpx;
+    font-size: 30rpx;
+    line-height: 50rpx;
+ }
+.content-text text {
+    font-size: 16px;
+    
+}
+
+
+.contactus {
+    
+    margin-top:10rpx;
+    height:500rpx;
+}
+.contactus-item{
+    padding:30rpx;
+}
+.contactus-item text {
+   
+    color:black;
+    font-size:16px;
+}
+.weixin {
+    width:256rpx;
+    height:250rpx;
+    
+    padding-left: 150rpx;
+  
+
+    
+}

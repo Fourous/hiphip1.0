@@ -1,0 +1,138 @@
+<!--pages/user/user.wxml-->
+<block wx:if="{{quanxian=='1'}}">
+   <!-- <view id="userhead"> -->
+   <view class='topbackgro'>
+   <image class='picback' src='../../imges/homepic.jpg'></image>
+   </view>
+   <view class='userbutton'>
+   <image class='usertalk' src='../../imges/conver.png'></image>
+   <image class='userset' src='../../imges/set.png'></image>
+   </view>
+  <!-- </view> -->
+<!-- 这里是可以滑动得功能页面 -->
+<view class='usercontent'>
+<view class="userinfo">
+<view class='useravanick'>
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap='navigateToUserInfo'></image>
+         <text class="userinfo-nickname" bindtap='navigateToUserInfo'>{{userInfo.nickName}}</text>
+</view>
+<!-- 头像下面收藏关注等几个按钮 -->
+<view class='userbutn'>
+<text class='num'> 0 </text>
+<text class='numtex'> 收藏 </text>
+</view>
+<view class='userbutn'>
+<text class='num'> 0 </text>
+<text class='numtex'> 余额 </text>
+</view>
+<view class='userbutn'>
+<text class='num'> 0 </text>
+<text class='numtex'> 卡包 </text>
+</view>
+<view class='userbutn'>
+<text class='num'> 0 </text>
+<text class='numtex'> 购物 </text>
+</view>
+   </view>
+
+ <view id='gallery'>
+ <view class='struction'>
+ <text class='struct'>我的订单</text>
+ <text class='structall' bindtap='navigateToOrder'>查看全部 ></text>
+ </view>
+   <view class="gallery-item" bindtap='navigateToOrder'>
+         <image  class='piciconim' src="../../imges/obligation.jpg" style='opacity: 0.5'></image>
+         <text class='picicontx'>待付款</text>
+   </view>
+   <view class="gallery-item" bindtap='navigateToDeli'>
+         <image class='piciconim' src="../../imges/rea_deli.png" style='opacity: 0.5'></image>
+         <text class='picicontx'>待发货</text>
+   </view>
+   <view class="gallery-item" bindtap='navigateToRece'>
+         <image class='piciconim' src="../../imges/wait_rece.jpg" style='opacity: 0.5'></image>
+         <text class='picicontx'>待收货</text>
+    
+   </view>
+   <view class="gallery-item" bindtap='navigateToComm'>
+         <image class='piciconim' src="../../imges/comment.png" style='opacity: 0.5'></image>
+         <text class='picicontx'>待评价</text>
+   </view>
+</view>
+
+<view id='order'>
+<view class='struction'>
+ <text class='struct'>我的服务</text>
+ <text class='structall'>查看全部 ></text>
+ </view>
+ <!-- 
+ 我得订单 ../../imges/order.png 
+ 文章收藏 ../../imges/articles.png
+ 我得收获地址 ../../imges/saddress.png
+ 我得礼品卡 ../../imges/gifts.png
+ 关于我们 ../../imges/about_me.png
+  -->
+
+   <!-- <view class='order-item'>
+      <view class='item_img' style='vertical-align:top;'>
+         <image src='../../imges/order.png' style='width:100%;height:100%'></image>
+      </view>
+      <view class='item_txt' style='vertical-align:top;' bindtap='navigateToOrder'>我的订单</view>
+   </view>
+
+   <view class='order-item'>
+      <view class='item_img' style='vertical-align:top;'>
+         <image src='../../imges/articles.png' style='width:100%;height:100%;opacity: 0.5'></image>
+      </view>
+      <view class='item_txt' style='vertical-align:top;' bindtap='navigeteToShc'>文章收藏</view>
+   </view>
+
+   <view class='order-item' bindtap='goToAddr'>
+      <view class='item_img' style='vertical-align:top;'>
+         <image src='../../imges/saddress.png' style='width:100%;height:100%;opacity: 0.5'></image>
+      </view>
+      <view class='item_txt' style='vertical-align:top;'>我的收货地址</view>
+   </view>
+
+   <view class='order-item'>
+      <view class='item_img' style='vertical-align:top;'>
+         <image src='../../imges/gifts.png' style='width:100%;height:100%;opacity: 0.5'></image>
+      </view>
+      <view class='item_txt' style='vertical-align:top;'>我的礼品卡</view>
+   </view>
+
+
+   <view class='order-item' bindtap='navigateToAbout'>
+      <view class='item_img' style='vertical-align:top;'>
+         <image src='../../imges/about_me.png' style='width:100%;height:100%;opacity: 0.5'></image>
+      </view>
+      <view class='item_txt' style='vertical-align:top;'>关于我们</view>
+   </view> -->
+
+<view class="gallery-item" bindtap='navigeteToShc'>
+         <image  class='piciconor' src="../../imges/articles.png" style='opacity: 0.5'></image>
+         <text class='picicontx'>文章收藏</text>
+   </view>
+   <view class="gallery-item" bindtap='goToAddr'>
+         <image class='piciconor' src="../../imges/saddress.png" style='opacity: 0.5'></image>
+         <text class='picicontx'>收货地址</text>
+   </view>
+   <view class="gallery-item" bindtap='navigateToRece'>
+         <image class='piciconor' src="../../imges/gifts.png" style='opacity: 0.5'></image>
+         <text class='picicontx'>礼品卡</text>
+    
+   </view>
+   <view class="gallery-item" bindtap='navigateToAbout'>
+         <image class='piciconor' src="../../imges/about_me.png" style='opacity: 0.5'></image>
+         <text class='picicontx'>关于我们</text>
+   </view>
+
+</view>   
+
+
+</view>
+  
+</block>
+
+<block wx:if="{{quanxian=='0'}}">
+   <button open-type='getUserInfo' lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户权限</button>
+</block>

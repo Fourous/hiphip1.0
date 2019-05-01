@@ -1,0 +1,30 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view id="recharge">
+    <view class="recharge-vip">
+    <text>充值VIP将获得更多的折扣优惠
+        并且将获得神秘大礼包一份
+        </text>
+    </view>    
+    <view class="recharge-vip">
+        <button type="default" bindtap="rechargevip">充值VIP</button>
+    </view>
+
+
+<view class="balance">
+    <text>您的当前余额\n</text>
+    <view class="balance-count">
+        <text>12.25</text>
+    </view>
+    
+</view>
+<form bindtap="formSubmit">
+    <view class="recharge-money">
+        <text>充值:</text>
+        <input type="text" placeholder="请输入充值金额" maxlength="15"  name="count" value="" />
+    </view>
+    <view class='hr'></view>
+    <view class="submit">
+        <button formType="submit">充值</button>
+    </view>
+</form>
+</view>

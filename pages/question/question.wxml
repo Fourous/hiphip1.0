@@ -1,0 +1,55 @@
+<!--pages/question/question.wxml-->
+<block wx:if='{{questionMode==0}}'>
+  <view>
+    <form bindsubmit='question_sub' bindreset='question_res'>
+      <view class='question_c'>
+        <view>请问您的姓名：</view>
+        <input name="user_name" placeholder='姓名'></input>
+      </view>
+      <view class='question_c'>
+        <view>请问您的电话号码：</view>
+        <input name="user_phone" placeholder='电话号码'></input>
+      </view>
+      <view class='question_c'>
+        <view>请问您的破蛋日：</view>
+        <!-- 日期控件  -->
+        <view class='question_c'>
+          <picker mode="date" name='user_bir' value="{{date}}" start="1900-01-01" end="2017-1-23" bindchange="bindDateChange">
+            <view class="user_bir">
+              日期: {{dates}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class='question_c'>
+        <view>请问您的家庭住址：</view>
+        <input name='user_add' placeholder='家庭住址'></input>
+      </view>
+      <view class='question_c'>
+        <view>请问您是GG还是MM：</view>
+        <radio-group name="user_sex">
+          <label>
+            <radio value='1'>GG</radio>
+          </label>
+          <label>
+            <radio value='0'>MM</radio>
+          </label>
+        </radio-group>
+      </view>
+      <view>
+        <button class='sub' form-type='submit'>确认提交</button>
+        <button class='res' form-type='reset'>取消重置</button>
+      </view>
+    </form>
+  </view>
+</block>
+<block wx:if='{{questionMode==1}}'>
+  <view>
+    <view class='change_txt'>
+      您已经填写了该问卷，如果您发现问卷填写有错误，需要修改，点击下方按钮可修改，我们将感激不尽。
+    </view>
+    <view>
+      <button class='change_btn' bindtap='goToQuestion'>更改问卷</button>
+    </view>
+  </view>
+</block>

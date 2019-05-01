@@ -1,0 +1,68 @@
+<!--pages/good.wxml-->
+<!-- <view wx:for='{{goods}}' wx:for-item='goodsItem' wx:for-index='goodsIndex' class='main'>
+   <block wx:if='{{goodsIndex==type}}'>
+      <block wx:for='{{goodsItem.good}}' wx:for-item='goodItem' wx:for-index='goodIndex'>
+         <block wx:if='{{goodIndex==id}}'> -->
+            <view class='good_swiper'>
+               <swiper indicator-dots='true' autoplay='true' interval='3000' duration='1000' circular='true'>
+                  <block wx:for='{{goods.srcs}}'>
+                     <swiper-item>
+                        <image class='swiper_img' style='width:100%; height=auto;' src="{{item}}">
+                        </image>
+                     </swiper-item>
+                  </block>
+               </swiper>
+            </view>
+            <view class='good_content'>
+               <view class='good_title'>
+                  名称：
+                  <text class='title'>{{goods.title}}</text>
+               </view>
+               <view class='good_package'>
+                  <picker mode='selector' bindchange='changePackage' data-id='{{id}}' data-type='{{type}}' value='{{goods.package}}' range='{{goods.packages}}'>
+                     套餐类型: {{goods.packages[goods.package]}}
+                  </picker>
+               </view>
+               <view class='good_price'>
+                  价格：
+                  <text class='price'>${{goods.prices[goods.package]}}</text>
+                  <text class='VIPPrice'>${{goods.vipPrices[goods.package]}}</text>
+                  <button class='share' open-type='share'>分享</button>
+               </view>
+            </view>
+            <view class='good_comment'>
+               <view class='comment_title'>用户评价</view>
+               <view class='comment'>
+                  <block wx:for='{{goods.comments}}'>
+                     <view class='comment_item'>
+                        <view class='item_comment'>
+                           {{item.comment}}
+                        </view>
+                        <view class='item_time'>
+                           {{item.time}}
+                        </view>
+                     </view>
+                  </block>
+               </view>
+            </view>
+         <!-- </block>
+      </block>
+   </block>
+</view> -->
+<view class='good_foot'>
+   <view class='btn_1'>客服</view>
+   <block wx:if='{{type!=5}}'>
+      <view class='btn_2' bindtap='navigateToCart'>购物车</view>
+      <view class='btn_3' bindtap='addCart' data-id='{{id}}'>加入购物车</view>
+      <view class='btn_4'>立即购买</view>
+   </block>
+   <block wx:if='{{type==5}}'>
+      <view class='btn_2'>留言</view>
+      <view class='btn_3'>不想要</view>
+      <view class='btn_4'>想要</view>
+   </block>
+</view>
+<!--test  -->
+<!-- <view>
+{{goods[type].good[id].title}}
+</view> -->

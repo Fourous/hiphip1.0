@@ -1,0 +1,58 @@
+<view id="about" >
+    
+    <!--图文展示,用轮播图显示-->
+    <view >
+            <swiper id="banner" interval="2000" duration="1000" autoplay circular indicator-dots>
+                    <swiper-item>
+                        <image src="" mode="scaleToFill" style="width:750rpx;"></image>
+                    </swiper-item>
+                    <swiper-item>
+                        <image src="" mode="scaleToFill" style="width:750rpx;"></image>
+                    </swiper-item>
+                    <swiper-item>
+                        <image src="" mode="scaleToFill" style="width:750rpx;"></image>
+                    </swiper-item>
+                </swiper>
+    </view>
+    <!--关于我们介绍主要内容，可配图,根据内容来做一些适当改变-->
+    <view class="content">
+            <view class="content-item">
+                 
+                    <text>关于我们</text>
+              </view>
+        <view class="hr"></view>
+        <view class="content-text">
+        <text >我们是武汉理工大学的学生，今天天气晴朗，风和日丽，适合也出有望，哈哈哈，我不知道写什么了。。。。
+                    就这样我们是武汉理工大学的学生，今天天气晴朗，风和日丽，适合也出有望，哈哈哈，我不知道写什么了。。。。
+                    就这样我们是武汉理工大学的学生，今天天气晴朗，风和日丽，适合也出有望，哈哈哈，我不知道写什么了。。。。
+                    就这样afaf是武汉理工大学的学生，今天天气晴朗，风和日丽，适合也出有望，哈哈哈，我不知道写什么了。。。。
+                    就这样我们是武汉理工大学的学生，今天天气晴朗，风和日丽，适合也出有望，哈哈哈，我不知道写什么了。。。。
+                    就这样我们是武汉理工大学的学生，今天天气晴朗，风和日丽，适合也出有望，哈哈哈，我不知道写什么了。。。。
+                    就这样afaf
+         </text>
+        </view >
+      <!--  <view class="about-content-img">
+                <image class="about-content" src="../../image/01.jpg" background-size="cover"></image>
+                </view> -->
+    </view>
+    
+    <!--联系我们-->
+    <view id="contactus">
+            <text>联系我们</text>
+         </view>
+    <view class="hr"></view>
+    <view class="contactus" style="background-image: url('../../imges/swiper_1.png')" >
+       
+                <view class="contactus-item">
+                   
+                        <text>联系电话 :15872113369\n</text>
+                        <text>公司地址：xxxxxxx \n</text>
+                        <text>邮箱：xxxxx@163.com</text>
+                  </view>
+                  <view>
+                      <!--微信二维码-->
+                      <image class="weixin" src="../../imges/8.jpg"></image>
+                  </view>
+             
+    </view>
+</view>

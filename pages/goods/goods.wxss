@@ -1,0 +1,118 @@
+/* pages/goods/goods.wxss */
+page{
+   width: 100%;
+   height: 100%;
+}
+
+.good_swiper{
+   height: 400rpx;
+   width: 100%;
+   border-bottom: 10rpx solid rgb(245, 245, 245);
+}
+swiper{
+   height: 100%;
+   width: 100%;
+}
+swiper-item {
+   width: 100%;
+   height: 100%;
+}
+
+.good_content {
+   padding: 20rpx;
+   border-bottom: 20rpx solid rgb(245, 245, 245);
+}
+
+.good_title, .good_package, .good_price {
+   padding-left: 20rpx;
+   margin-bottom: 20rpx;
+   font-size: 13px;
+   line-height: 15px;
+   font-family: '宋体';
+}
+
+.good_price .price {
+   margin-right: 20rpx;
+}
+
+.good_price .VIPPrice {
+   color: orangered;
+}
+
+.share {
+   float: right;
+   width: 20%;
+   border-radius: 90%;
+   font-size: 15px;
+   height: 70rpx;
+   padding: 0rpx;
+   border: 1rpx;
+   margin-right: 20rpx;
+}
+
+.good_comment {
+   border-bottom: 20rpx solid rgb(245, 245, 245);
+}
+
+.comment_item {
+   font-family: '宋体';
+   line-height: 17px;
+   font-size: 13px;
+   height: 200rpx;
+   background: white;
+   padding: 10rpx 20rpx;
+   border-bottom: 3rpx solid rgb(245, 245, 245);
+}
+.comment_title{
+   width: 100%;
+   height: 100rpx;
+   line-height: 100rpx;
+   text-align: center;
+   border-bottom: 20rpx solid rgb(245, 245, 245);
+}
+.item_comment {
+   padding-top: 20rpx;
+   height: 150rpx;
+}
+
+.item_time {
+   height: 50rpx;
+   text-align: right;
+}
+
+.good_foot {
+   position: fixed;
+   width: 100%;
+   height: 110rpx;
+   background: white;
+   z-index: 111;
+   bottom: 1rpx;
+   font-size: 15px;
+   border: 3rpx solid rgb(245, 245, 245);
+}
+
+.btn_1, .btn_2 {
+   text-align: center;
+   height: 110rpx;
+   line-height: 110rpx;
+   width: 15%;
+   display: inline-block;
+    /* float: left; 
+    border-right: 5rpx solid rgb(245, 245, 245)； */
+}
+.btn_2{
+   width: 20%;
+}
+.btn_3, .btn_4{
+   text-align: center;
+   display: inline-block;
+    /* float: right;  */
+   width: 32%;
+   height: 110rpx;
+   line-height: 110rpx;
+}
+
+.btn_4 {
+  background: orangered;
+  color: white;
+}

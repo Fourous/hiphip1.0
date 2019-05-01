@@ -1,0 +1,19 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='welcome'>
+   <view class='wel_img'>
+      <image class='pic' src='../../imges/index.jpg'>
+      </image>
+   </view>
+
+   <view class='wel_button'>
+      <button class='wel_btn' bindgetuserinfo="onGotUserInfo" open-type='getUserInfo' lang="zh_CN" >进入店铺</button>
+   </view>
+
+   <view class='wel_txt'>
+      带给你不一样的世界
+   </view>
+
+   <!-- <view class='foot'>
+   <image class='comicon' src='../../imges/hiphip.jpg'></image>
+   </view> -->
+</view>

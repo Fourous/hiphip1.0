@@ -1,0 +1,47 @@
+<!--pages/article_collection/article_collection.wxml-->
+<view id="article-collection">
+   <!--点击图片跳转到推荐文章界面-->
+
+   <view class="article-image"  bindtap='goToArticleD'>
+      <image src="../../imges/article_pic.png" style='width:100%; height:400rpx;'></image>
+      <!--style="background-image: url({{bgimg}});"背景设置有透明度，具体值可调节 取值0-1-->
+      <view class="article" style="background:white; opacity: 0.8;">
+         <view class='article_item' style='color:black'>
+            <view class='item_title1'>你好！</view>
+            
+            <text class='item_txt1'>众多周知，我们生活中有很多饮食习惯，影响着我们的生活的放放面面，所以我们的饮食习惯将决定我们的生活和健康，这是非常重要的。</text>
+         </view>
+      </view>
+   </view>
+
+  
+
+   <view class='backarticle'>
+
+
+    <!--这里做一个循环读取数据库数据，一条条往下列举-->
+    
+    <view  class="mscontent">
+    
+    <block  wx:for="{{articles}}" wx:key="article">
+      <view class="article-item" bindtap='goToArticleD'  data-id="{{item.id}}">
+         <!--文章图片 -->
+        <image src="../../imges/article_pic.png" class='articleimage'></image>
+        <view class='article-content'>
+         <!--文章标题-->
+         <text class='item_title'>{{item.title}}\n</text>
+         <!--文章内容-->
+         <text class='item_txt'>{{item.content}}\n</text>
+        </view>
+       
+      </view>
+
+   </block>
+
+    </view>
+
+
+
+   </view>
+   
+</view>

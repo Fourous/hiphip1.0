@@ -1,0 +1,212 @@
+/* pages/user/user.wxss */
+page{
+   width: 100%;
+   height: 100%;
+   background-color: #C9CACA;
+}
+#userhead {
+  /* border-bottom: 20rpx solid rgb(245, 245, 245); */
+  height: 360rpx;
+}
+.userbutton{
+  position: absolute;
+  top: 0px;
+  z-index: 111;
+  width: 100%;
+  text-align: right;
+  height: 70rpx;
+  margin-top: 35rpx;
+}
+.userset{
+width: 50rpx;
+height: 50rpx;
+margin-right: 40rpx;
+margin-left: 30rpx;
+}
+.usertalk{
+width: 50rpx;
+height: 50rpx;
+}
+.topbackgro{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 360rpx;
+  z-index: -111;
+}
+.picback{
+  width: 100%;
+  height: 100%;
+}
+.userinfo{
+  width: 100%;
+  height: 333rpx;
+  margin: 0px auto;
+  border-radius: 4%;
+  background-color: white;
+}
+.userbutn{
+width: 24.7%;
+height: 130rpx;
+display: inline-block;
+text-align: center;
+}
+.numtex {
+  display: block;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.num{
+  display: block;
+  line-height: 65rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.usercontent{
+  width: 92%;
+  margin: 0px auto;
+  background-color: #C9CACA;
+  margin-top: 169rpx;
+  border-radius: 3%;
+}
+.useravanick{
+  text-align: center;
+  border-bottom: solid 3rpx #eee;
+  height: 200rpx;
+}
+.userinfo-avatar {
+   width: 200rpx;
+   height: 200rpx;
+   border-radius: 50%;
+   margin-top: -110rpx
+}
+
+.userinfo-nickname {
+   /* padding: 0rpx 0rpx 100rpx 50rpx;
+   color: blanchedalmond;
+   font-size: 15px;
+   position: relative;
+   bottom: 80rpx; */
+   display: block;
+   font-size: 20px;
+}
+
+.userinfo-balance {
+   padding-top: 0rpx;
+   float: right;
+   padding-right: 20rpx;
+   margin-top: 50rpx;
+   margin-right: 30rpx;
+}
+
+.userinfo-balance p {
+   font-size: 25px;
+   padding-right: 50rpx;
+}
+
+#userinfo-gallery {
+   display: flex;
+   padding-left: 40rpx;
+   padding-top: 30rpx;
+   margin-left: 30rpx;
+}
+
+.userinfo-gallery-item {
+   flex: auto;
+   color: bisque;
+}
+
+#gallery {
+   /* display: flex; */
+   width: 100%;
+   height: 300rpx;
+   /* padding-bottom: 30rpx;
+   border-bottom: 20rpx solid rgb(245, 245, 245); */
+   border-radius: 4%;
+   margin-top: 20rpx;
+   background-color: white;
+}
+
+#gallery image {
+   width: 50%;
+   height: 38%;
+   /* display: block; */
+   /* margin: 10rpx; */
+   margin-top: 55rpx;
+}
+.struction{
+display: block;
+height: 75rpx;
+border-bottom: solid 2rpx #eee;
+}
+.struct{
+float: left;
+font-size: 15px;
+margin-left: 28rpx;
+font-weight: bold;
+line-height: 75rpx;
+}
+.structall{
+float: right;
+margin-right: 28rpx;
+font-size: 12px;
+color: gray;
+line-height: 75rpx;
+font-weight: bold;
+}
+.gallery-item {
+   width: 25%;
+   text-align: center;
+    height: 200rpx;
+    display: inline-block;
+}
+.piciconim{
+  width: 100%;
+  height: 80%;
+}
+.picicontx{
+display: block;
+font-size: 12px;
+color: gray;
+line-height: 40rpx;
+
+}
+#other {
+   margin: 40rpx 0px;
+}
+
+#order {
+   /* display: flex; */
+   width: 100%;
+   height: 300rpx;
+   /* padding-bottom: 30rpx;
+   border-bottom: 20rpx solid rgb(245, 245, 245); */
+   border-radius: 4%;
+   margin-top: 20rpx;
+   background-color: white;
+
+}
+.piciconor{
+   width: 52%;
+  height: 49%;
+  margin-top: 39rpx;
+}
+.order-item{
+   height: 90rpx;
+   width: 100%;
+   border-bottom: 3rpx solid rgb(245, 245, 245);
+}
+
+.item_img {
+   display: inline-block;
+   height: 70rpx;
+   width: 70rpx;
+   margin: 10rpx 20rpx;
+}
+.item_txt {
+   display: inline-block;
+   height: 90rpx;
+   font-size: 15px;
+   line-height: 90rpx;
+}

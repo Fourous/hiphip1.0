@@ -1,0 +1,68 @@
+#recharge {
+    font-size: 20px;
+    margin: 50rpx;
+    background-color:white;
+}
+.recharge-vip  {
+    padding-top: 30rpx;
+    margin-top: 30rpx;
+
+}
+.recharge-vip text {
+    line-height: 30px;
+    
+  
+}
+
+.recharge-vip button {
+   background-color:blanchedalmond;
+}
+.balance {
+    margin-top:150rpx;
+    margin-bottom: 120rpx;
+}
+.balance text {
+    font-size: 20px;
+    padding-left: 170rpx;
+    text-align: center;
+}
+.balance-count {
+ margin-top:20rpx;
+ width: 100%;
+}
+.balance-count text {
+    font-size: 30px;
+    align-content: center;
+    padding-left: 220rpx;
+}
+
+.recharge-money {
+    clear:both;
+    margin-top: 50rpx;
+    padding:12rpx 0rpx;
+}
+.recharge-money text{
+    line-height: 24px;
+    padding-left: 0rpx;
+    float: left;
+    font-size:24px;
+}
+.recharge-money input {
+    float: right;
+    position: relative;
+}
+.hr{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background:gray;
+    top: 60rpx;
+}
+.submit {
+    margin-top:50rpx;
+    padding:50rpx ;
+    padding-left:180rpx;  
+}
+.submit button {
+    background-color: blanchedalmond;
+}

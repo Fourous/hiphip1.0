@@ -1,0 +1,128 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+   <!-- 悬浮按钮问卷调查 -->
+   <view class='question_query'>
+      <view class='ques_btn' style="border-color:white;color:white;" plain='true' bindtap='navigateToQuestion' data-questionmode='{{questionMode}}'>
+         <image src='../../imges/question_btn.png' style='width:100%;height:auto;'></image>
+      </view>
+   </view>
+   <!-- 轮播图片展示 -->
+   
+   <view class='swiper_v'>
+      <swiper indicator-dots='true' autoplay='true' interval='3000' duration='1000' circular='true'>
+         <block wx:for="{{imgUrls}}">
+            <swiper-item>
+               <image class='swiper_img' style='width:100%; height=auto;' src="{{item}}">
+               </image>
+            </swiper-item>
+         </block>
+      </swiper>
+   </view>
+   <!-- 中间栏目  -->
+   <view class="divide">
+   <view class='divideform'>
+   <view class='ad'>
+      <text class='ad_txt'>今日公告：</text>
+      <text class='ad_right'>须知</text>
+      <swiper class='ad_swi' autoplay='true' vertical='true' circular='true' interval='3000' duration='1000'>
+         <swiper-item wx:for='{{adv}}' data-id='{{item.id}}' bindtap='navigateToAd'>
+            <text>{{item.title}}</text>
+         </swiper-item>
+      </swiper>
+</view>
+      <view class='fiveform'>
+<!-- 这是一个form -->
+      <view class='form'>
+      <view class='formpic'>
+      <image class='imagepic' src='../../imges/yinerz.png'></image>
+      </view>
+
+      <view class='formtxt'>
+      <text class='textform'>婴儿组</text>      
+      </view>
+
+      </view>
+<!--  -->
+<view class='form'>
+      <view class='formpic'>
+      <image class='imagepic' src='../../imges/yinerz.png'></image>
+      </view>
+
+      <view class='formtxt'>
+      <text class='textform'>婴儿组</text>      
+      </view>
+
+      </view>
+<!--  -->
+<view class='form'>
+      <view class='formpic'>
+       <image class='imagepic' src='../../imges/yinerz.png'></image>
+      </view>
+
+      <view class='formtxt'>
+      <text class='textform'>婴儿组</text>      
+      </view>
+
+      </view>
+      <!--  -->
+      <view class='form'>
+      <view class='formpic'>
+       <image class='imagepic' src='../../imges/yinerz.png'></image>
+      </view>
+
+      <view class='formtxt'>
+      <text class='textform'>婴儿组</text>      
+      </view>
+
+      </view>
+      <!--  -->
+      <view class='form'>
+      <view class='formpic'>
+       <image class='imagepic' src='../../imges/yinerz.png'></image>
+      </view>
+
+      <view class='formtxt'>
+      <text class='textform'>婴儿组</text>      
+      </view>
+      </view>
+      </view>
+   </view>
+   
+    
+   </view>
+  
+   <!-- 滚动tab 设置商品列表内容 -->
+
+   <view class='foot_item'>
+
+      <scroll-view class='list_tab' scroll-x='true' scroll-left="{{scrollLeft}}">
+         <view class="list_tab_item {{currentTab==0?'active':''}}" data-current="0" bindtap='switchNav'>婴儿组</view>
+         <view class="list_tab_item {{currentTab==1?'active':''}}" data-current="1" bindtap='switchNav'>婴儿组</view>
+         <view class="list_tab_item {{currentTab==2?'active':''}}" data-current="2" bindtap='switchNav'>婴儿组</view>
+         <view class="list_tab_item {{currentTab==3?'active':''}}" data-current="3" bindtap='switchNav'>婴儿精品</view>
+         <view class="list_tab_item {{currentTab==4?'active':''}}" data-current="4" bindtap='switchNav'>新品</view>
+      </scroll-view>
+
+
+      <!-- tab内容 -->
+      <swiper class='list_content' current='{{currentTab}}' duration='300' interval='1000' style='height:{{winHeight}}rpx' bindchange='switchTab'>
+         <swiper-item wx:for="{{goods}}" class='list_content' wx:for-item='goodsItem' wx:for-index='goodsIndex'>
+            <block wx:for="{{goodsItem.good}}">
+               <view class='list_item' bindtap='navigateToGood' data-type='{{item.typeId}}' data-id='{{item.goodId}}'>
+
+                  <view class='item_pic'>
+                     <image src='../../imges/swiper_1.png'></image>
+                  </view>
+
+                  <view class='item_desc'>
+                     <view class='item_title'>{{item.title}}</view>
+                     <view class='item_price'>普通价格:$ {{item.price}}</view>
+                     <view class='item_VIPprice'>VIP:$ {{item.vipPrice}}</view>
+                  </view>
+
+               </view>
+            </block>
+         </swiper-item>
+      </swiper>
+   </view>
+</view>

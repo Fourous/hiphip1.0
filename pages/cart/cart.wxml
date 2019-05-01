@@ -1,0 +1,106 @@
+<!--pages/cart/cart.wxml-->
+<!-- 结算栏 -->
+<view class='cartList'>
+   <view class='list_content'>
+      <block wx:if="{{cartlist==null||cartlist.length==0}}">
+         <view class='nothing'>
+            <text class='nothing_text'>购物车空空如也</text>
+            <button bindtap='goToIndex'>去首页逛逛吧</button>
+         </view>
+      </block>
+      <!-- <block wx:for="{{cartlist}}">
+      <view class='list_item' data-id='{{item.id}}'>
+        <view class='item_title'>
+          <view class='title_l'>
+            <switch type='checkbox' checked='{{item.checked}}' bindchange='checkItem' data-id='{{item.id}}'></switch>
+            <text>{{item.good.type}}</text>
+          </view>
+          <view class='title_r' bindtap="changeMode" data-id="{{item.id}}">
+            <text> | </text>
+            <block wx:if="{{item.mode==0}}">
+                <text>编辑</text>
+              </block>
+              <block wx:if="{{item.mode==1}}">
+                <text>完成</text>
+              </block>
+          </view>
+        </view>
+        <view class='item_desc'>
+          <view class='desc_pic'>
+            <image class='pic' src='{{item.good.picSrc}}'></image>
+          </view>
+          <block wx:if='{{item.mode==0}}'>
+            <view class='desc_content'>
+              <view class='content_title'>{{item.good.title}}</view>
+              <view class='content_package'>套餐类型:{{item.good.package[item.good.tc]}}</view>
+              <view class='content_price'>
+                <text class='price'>{{item.good.price[item.good.tc]}}</text>
+                <text class='num'>× {{item.num}}</text>
+              </view>
+            </view>
+          </block>
+          <block wx:if='{{item.mode==1}}'>
+            <view class='desc_content'>
+              <view class='content_l'>
+                <view class='content_num'>
+                  <text class='num_jian' catchtap='delNum' data-id='{{item.id}}'> - </text>
+                  <text class='num_num'> {{item.num}} </text>
+                  <text class='num_jia' catchtap='addNum'  data-id='{{item.id}}'> + </text>
+                </view>
+                <view class='content_package'>
+                  <picker mode='selector' bindchange='changePackage' data-id='{{item.id}}' value='{{item.good.tc}}' range='{{item.good.package}}'>
+                  套餐类型: {{item.good.package[item.good.tc]}}
+                  </picker>
+                </view>
+              </view>
+              <view class='content_r'>
+                删除
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block> -->
+      <view class='list_item' wx:for='{{cartlist}}' wx:key='{{index}}'>
+         <view class='item_content' data-id='{{item.cartId}}' data-index='{{index}}' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" style='{{item.txtStyle}}'>
+            <view class='content_che' style='vertical-align:top;'>
+               <switch type='checkbox' checked='{{item.checked}}' bindchange='changeItem' data-id='{{item.cartId}}'></switch>
+            </view>
+            <view class='content_desc' data-id='{{item.cartId}}' style='vertical-align:top;'>
+               <view class='desc_pic' data-id='{{item.cartId}}' style='vertical-align:top;'>
+                  <image class='pic' src='{{item.good.srcs}}'></image>
+               </view>
+               <view class='desc_content' data-id='{{item.cartId}}' style='vertical-align:top;'>
+                  <view class='content_title'>{{item.good.title}}</view>
+                  <view class='content_price'>
+                     <text class='price'>￥ {{item.orVIP?item.good.prices[item.good.package]:item.vipPrices[item.good.package]}}</text>
+                     <view class='num'>
+                        <view class='num_jian' catchtap='delNum' data-id='{{item.cartId}}'> - </view>
+                        <view class='num_num'> {{item.num}} </view>
+                        <view class='num_jia' catchtap='addNum' data-id='{{item.cartId}}'> + </view>
+                     </view>
+                  </view>
+               </view>
+            </view>
+         </view>
+         <view class='item_del' data-id='{{item.cartId}}' data-index='{{index}}' bindtap="delItem">删除</view>
+      </view>
+   </view>
+</view>
+<block wx:if="{{cartlist!=null&&cartlist.length!=0}}">
+   <view class='foot'>
+      <view class='seleAll'>
+         <switch class='que' type='checkbox' checked='{{isAll}}' bindchange='checkAll'></switch>
+         <text class='sele_text'>全选</text>
+      </view>
+      <view class='total'>
+         <view class='total_count'>
+            结算 {{totalCount}}
+         </view>
+         <view class='total_price'>
+            合计:
+            <text class='price'>$ {{totalPrice}}</text>
+         </view>
+      </view>
+   </view>
+</block>

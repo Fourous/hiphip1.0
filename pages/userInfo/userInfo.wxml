@@ -1,0 +1,23 @@
+
+<!--pages/userinfo/userinfo.wxml-->
+<view class="container"> 
+    <view id="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" ></image>
+      <view class="userinfo-upload">
+            <button type="default" bindtap="uploadimg">上传图片</button>
+       </view>
+      
+    </view>
+    <form bindsubmit="formSubmit">
+    <view id="userinfo-nickname">
+        <view class="userinfo-nickname">
+           <text>昵称 |</text>
+           <input type="text" maxlength="20" placeholder="{{userInfo.nickname}}" name="nickname" value="" />
+       </view>
+       <view class='hr'></view>
+       <view class="submit">
+        <button formType="submit">确定</button>  
+       </view>
+    </view>
+    </form>
+  </view>

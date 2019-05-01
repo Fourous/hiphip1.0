@@ -1,0 +1,36 @@
+/* pages/question/question.wxss */
+.question_c{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 3rpx solid rgb(245, 245, 245);
+}
+.question_c input{
+  margin-top:15rpx;
+  margin-bottom: 15rpx; 
+}
+.question_c picker{
+  margin-top:15rpx; 
+  margin-bottom: 15rpx;
+}
+.question_c radio-group{
+  margin-top:15rpx; 
+  margin-bottom: 15rpx;
+}
+.question_c radio-group label{
+  margin-right: 50rpx;
+}
+.sub, .res{
+  display: inline-block;
+  width: 40%;
+  margin-top: 100rpx;
+  margin-left: 50rpx;
+}
+.change_txt{
+  background: #CCC;
+  padding: 50rpx;
+}
+.change_btn{
+  margin-top: 50rpx;
+  width: 50%
+}
